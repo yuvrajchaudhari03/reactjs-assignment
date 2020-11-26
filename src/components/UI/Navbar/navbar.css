@@ -1,0 +1,49 @@
+.navbar {
+  float: right;
+  width: 100%;
+  
+  padding-right: 40px;
+}
+.navullist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.navlist {
+    float: right;
+}
+ .navullist li a {
+   text-decoration: none;
+    float: left;
+    font-weight: 300;
+    display: block;
+    color: #3e4a74;
+    text-align: center;
+    padding: 14px 10px;
+    font-size: 15px;
+  
+}
+a.left {
+  position: relative;
+}
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(29, 28, 28);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+.navbar-toggle {
+  border: none;
+  outline: none;
+}
+
